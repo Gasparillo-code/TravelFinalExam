@@ -1,0 +1,60 @@
+@keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  section {
+    animation: fade-in-up 1s ease-out forwards;
+    opacity: 0;
+  }
+  section > * {
+    animation: fade-in-up 1s ease-out forwards;
+    animation-delay: 0.2s;
+  }
+  .destination img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+  }
+  
+  .destination img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .footer a {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #ffffff; /* Or a lighter blue if you prefer */
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  /* Contact input hover/focus effect */
+form input:hover,
+form textarea:hover,
+form input:focus,
+form textarea:focus {
+  border-color: #80CBC4;
+  box-shadow: 0 0 5px rgba(128, 203, 196, 0.6);
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.btn-pop {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .btn-pop:hover {
+    transform: scale(1.05);
+    background-color: #5eaaa8; /* Optional: a slightly richer shade of your theme */
+    color: #fff;
+  }
+  
+
+
