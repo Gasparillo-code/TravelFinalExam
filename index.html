@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css">  
 
 </head>
-<body>
+<body>  
 
     <!-- Sticky Navigation Bar -->
    <header style="position: fixed; top: 0; width: 100%; z-index: 1030;">
@@ -21,17 +21,23 @@
       <div class="ms-2">
         <span class="text-primary fw-bold fs-5">GASPAR TRAVEL AGENCY</span>
       </div>
+            <!-- Burger menu button -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
       <!-- Collapsible nav links -->
       <div class="collapse navbar-collapse justify-content-center justify-content-lg-end" id="navbarNav">
         <ul class="navbar-nav fs-5 text-center text-primary">
           <li class="nav-item">
-            <!-- Add your nav links here -->
+            <a class="nav-link text-primary" href="#contact" style="font-family: Georgia, serif; font-weight: bold;">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#carousel" style="font-family: Georgia, serif; font-weight: bold;">Featured</a>
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
 </header>
 
     <!-- Hero Section (Now BELOW the navigation bar) -->
@@ -78,7 +84,48 @@
         </div>
       </div>
     </section>
-    
+  <!-- Carousel Section -->
+  <section id="carousel" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="text-primary">Featured Destinations</h2>
+      </div>
+
+      <div id="destinationCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow-sm">
+          <div class="carousel-item active">
+            <img src="assets/imgs/boracay.jpg" class="d-block w-75 mx-auto" alt="Destination 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="display-4 text-primary">Boracay</h5>
+              <p class="lead text-primary">The White Sand Beach</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imgs/palawan.jpg" class="d-block w-75 mx-auto" alt="Destination 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="display-4 text-primary">Palawan</h5>
+              <p class="lead text-primary">Explore Crystal Clear Waters</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imgs/siargao.jpg" class="d-block w-75 mx-auto" alt="Destination 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="display-4 text-primary">Siargao</h5>
+              <p class="lead  text-primary">Surfing Paradise</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Controls -->
+        <button class="carousel-control-prev btn-primary" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next btn-primary" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
      <!-- Contact Section -->
      <section id="contact" class="py-5">
@@ -108,7 +155,7 @@
                   </form>
                 </div>
               </div>
-              
+      
   
               <footer class="footer bg-secondary text-primary py-4">
                 <div class="container text-center">
@@ -124,7 +171,7 @@
                   <p class="mb-0">&copy; 2025 <strong>GASPAR TRAVEL AGENCY</strong>. All rights reserved.</p>
                 </div>
               </footer>
-            <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         </body>
       
 <script src="assets/js/bootstrap.bundle.min.js"></script>

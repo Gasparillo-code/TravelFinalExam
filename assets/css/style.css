@@ -59,4 +59,21 @@ form textarea:focus {
   transform: scale(1.05);
   background-color: #5eaaa8; /* Optional: a slightly richer shade of your theme */
   color: #fff;
+}
+
+/* Make carousel controls more visible and stylish */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6); /* Darker background for visibility */
+  border-radius: 50%;
+  padding: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-size: 70% 70%;
+}
+
+/* Hover effect for smooth animation */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+  transform: scale(1.2); /* Slight zoom effect */
 }/*# sourceMappingURL=style.css.map */
