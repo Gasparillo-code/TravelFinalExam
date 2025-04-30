@@ -12,33 +12,36 @@
 <body>  
 
     <!-- Sticky Navigation Bar -->
-   <header style="position: fixed; top: 0; width: 100%; z-index: 1030;">
-  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-    <div class="container-fluid"> 
-      <div class="logo-container p-1">
-        <img class="logo" src="assets/imgs/logo.png" alt="ExploreMore Logo">
-      </div>
-      <div class="ms-2">
-        <span class="text-primary fw-bold fs-5">GASPAR TRAVEL AGENCY</span>
-      </div>
-            <!-- Burger menu button -->
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container-fluid">
+          <!-- Logo and Brand Name (brand name hidden on mobile) -->
+          <div class="d-flex align-items-center">
+            <div class="p-1">
+              <img src="assets/imgs/logo.png" alt="ExploreMore Logo" class="img-fluid rounded-5" style="height: 60px;">
+            </div>
+            <span class="text-primary fw-bold fs-5 ms-2">GASPAR TRAVEL AGENCY</span>
+          </div>
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-      <!-- Collapsible nav links -->
-      <div class="collapse navbar-collapse justify-content-center justify-content-lg-end" id="navbarNav">
-        <ul class="navbar-nav fs-5 text-center text-primary">
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="#contact" style="font-family: Georgia, serif; font-weight: bold;">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="#carousel" style="font-family: Georgia, serif; font-weight: bold;">Featured</a>
-          </li>
-        </ul>
-      </div>
-</header>
+    
+          <!-- Nav Links -->
+          <div class="navbar-collapse justify-content-end collapse" id="navbarNav">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link text-primary fw-bold" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary fw-bold" href="#carousel">Featured</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!-- Hero Section (Now BELOW the navigation bar) -->
     <section class="hero position-relative" style="height: 100vh;">
