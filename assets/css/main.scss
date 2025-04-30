@@ -3,15 +3,10 @@
 
 // Include any default variable overrides here (though functions won't be available)
 $theme-colors: (
-  "primary":#4682B4,
-  "secondary":#213448,
+  "primary": #213448,
+  "secondary":#4682B4,
   "tertiary": #83c5be );
-  #213448
-  .logo{
-    height: 70px;
-    width: 70px;
-    border-radius: 60px;
-  }
+ 
   
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
